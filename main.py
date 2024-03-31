@@ -115,9 +115,10 @@ def download(groups):
             id = user.get_attribute("href")
             if id == 'https://vk.com/id174447258':
                 flag = 1
-            if flag ==1:
+            if flag ==0:
                 if (id,) not in ids:
                     ids.append((id,))
+            flag == 0
         driver.back()
         print(len(ids))
     for s in ids:
